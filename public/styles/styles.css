@@ -1,3 +1,11 @@
 .list-group-item {
-  line-height: 2.5;
+    line-height: 2.5;
+}
+
+.top {
+    margin-bottom: 30px;
+}
+
+.bottom {
+    margin-top: 50px;
 }
