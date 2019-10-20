@@ -1,0 +1,16 @@
+{
+    "name": "Apple Inc",
+    "url": "https://www.apple.com",
+    "contact": null,
+    "address": {
+        "street": "1 Infinite Loop Cupertino",
+        "state": "California",
+        "zip": 95014
+    },
+    "Job Details": {
+        "Posistion": "Software Developer",
+        "Description": "Software engineers design, develop, and test software and applications for computers. The main duties and responsibilities of software engineers include directing and participating in programming activities, monitoring, and evaluating system performance, and designing and implementing new programs and features.",
+        "Salary": 45.00,
+        "Salay Type": "Hourly"
+    }
+}
