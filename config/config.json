@@ -1,21 +1,21 @@
 {
-    "development": {
-        "username": "root",
-        "password": "1a2b3c4d",
-        "database": "EMPower_bd",
-        "host": "localhost",
-        "dialect": "mysql"
-    },
-    "test": {
-        "username": "root",
-        "password": null,
-        "database": "testdb",
-        "host": "localhost",
-        "dialect": "mysql",
-        "logging": false
-    },
-    "production": {
-        "use_env_variable": "JAWSDB_URL",
-        "dialect": "mysql"
-    }
+  "development": {
+    "username": "root",
+    "password": "1a2b3c4d",
+    "database": "EMPower_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "1a2b3c4d",
+    "database": "testdb",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
 }
