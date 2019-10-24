@@ -34,6 +34,18 @@ module.exports = function (sequelize, DataTypes) {
         len: [1, 160]
       }
     },
+    job_category: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [1, 160]
+      }
+    },
+    location: {
+      type: DataTypes.TEXT,
+      validate: {
+        len: [1, 160]
+      }
+    },
     compensation: {
       type: DataTypes.INTEGER,
       validate: {
