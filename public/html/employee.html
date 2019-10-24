@@ -2,16 +2,24 @@
 <html>
 
 <head>
-  <title>Title</title>
+  <title>Employee</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles/cssulkit/uikit.min.css" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../styles/cssulkit/style1.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 
   <script src="../js/jsulkit/uikit.min.js"></script>
   <script src="../js/jsulkit/uikit-icons.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  
+
 </head>
 
 <body>
@@ -25,7 +33,7 @@
 
       <a href="/" class="myButton">H o m e</a>
       <h1 class="uk-heading-line uk-text-left uk-heading-medium" id="head">EMPower</h1>
-      <h1 class="uk-heading-line uk-text-left uk-margin-medium-rightt" id="head"><span>Our Job Is Your Job</span></h1>
+      <h1 class="uk-heading-line uk-text-left uk-margin-medium-rightt" id="head"><span>Our Job Is To EMPower You</span></h1>
     </div>
     <br>
     <hr class="uk-divider-icon">
@@ -33,38 +41,38 @@
     <form>
 
       <div class="group">
-        <input type="text" required>
+        <input type="text" class="empInput" id="name" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Name</label>
       </div>
 
       <div class="group">
-        <input type="email" required>
+        <input type="email" class="empInput" id="email" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Email</label>
       </div>
       <div class="group">
-        <input type="number" required>
+        <input type="number" class="empInput" id="phoneNumber" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Phone Number</label>
       </div>
       <div class="group">
-        <input type="text" required>
+        <input type="text" class="empInput" id="jobType" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Job Type</label>
       </div>
       <div class="group">
-        <input type="text" required>
+        <input type="text" class="empInput" id="jobLocation" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Job Location</label>
       </div>
       <div class="group">
-        <input type="number" required>
+        <input type="number" class="empInput" id="compesation" required>
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Compensation $ hr.</label>
@@ -75,7 +83,33 @@
       </div>
 
     </form>
+
   </div>
+  <footer>
+    <a href="/api/contributors">Contributors </a>
+  </footer>
+
+
+
+
+<div id="modal-overflow" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Dear Partner</h2>
+        </div>
+        <div class="uk-modal-body" uk-overflow-auto>
+            <p>Please fill out all fields before submitting!</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+      </div>
+    </div>
+</div>
+
+  <script src="../js/employee_modal.js"></script>
+  
+
 </body>
 
 </html>
