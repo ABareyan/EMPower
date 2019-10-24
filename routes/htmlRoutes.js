@@ -3,6 +3,7 @@ var path = require("path");
 var db = require("../models");
 
 module.exports = function (app) {
+  
   app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/main.html"));
   });
@@ -14,6 +15,17 @@ module.exports = function (app) {
   app.get("/api/company", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/company.html"));
   });
+
+  app.get("/api/contributors", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/contributors.html"));
+  });
+
+  app.get("/api/result", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/result.html"));
+  });
+
+
+
 
 
 
