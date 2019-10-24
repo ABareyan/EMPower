@@ -15,23 +15,11 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/html/company.html"));
   });
 
+  app.get("/api/jobs", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/jobs.html"));
+  });
 
-
-  // app.get("/api/employee", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "../public/html/main.html"))
-  // });
-
-  // // Load index page
-  // app.get("/", function(req, res) {
-  //     db.Example.findAll({}).then(function(dbExamples) {
-  //         res.render("index", {
-  //             msg: "Welcome!",
-  //             examples: dbExamples
-  //         });
-  //     });
-  // });
-
-  // Load example page and pass in an example by id
+// Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function (
       dbExample
@@ -47,3 +35,18 @@ module.exports = function (app) {
     res.render("404");
   });
 };
+
+
+ // app.get("/api/employee", function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/html/main.html"))
+  // });
+
+  // // Load index page
+  // app.get("/", function(req, res) {
+  //     db.Example.findAll({}).then(function(dbExamples) {
+  //         res.render("index", {
+  //             msg: "Welcome!",
+  //             examples: dbExamples
+  //         });
+  //     });
+  // });
