@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "nar8384",
+    "password": "1a2b3c4d",
     "database": "empower_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "nar8384",
+    "password": "1a2b3s4d",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
