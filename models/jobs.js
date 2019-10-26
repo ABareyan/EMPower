@@ -21,6 +21,12 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
         isEmail: true
       },
+      phone_number: {
+        type: DataTypes.STRING,
+        validate: {
+          len: [1, 11]
+        }
+      },
       // eslint-disable-next-line camelcase
       location: {
         type: DataTypes.STRING,
@@ -37,11 +43,11 @@ module.exports = function(sequelize, DataTypes) {
         }
       },
       job_category: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          len: [1, 160]
-        }
+        type: DataTypes.TEXT,
+          allowNull: false,
+          validate: {
+            len: [1, 160]
+          }
       },
       position: {
         type: DataTypes.STRING,
@@ -57,22 +63,12 @@ module.exports = function(sequelize, DataTypes) {
           len: [1, 255]
         }
       },
-      compensation: {
+      hourly_wage: {
         type: DataTypes.INTEGER,
         validate: {
           len: [1, 160]
         }
       },
-      createdAt: {
-        type: DataTypes.DATE(3),
-        defaultValue: sequelize.literal("CURRENT_TIMESTAMP(3)")
-      },
-      updatedAt: {
-        type: DataTypes.DATE(3),
-        defaultValue: sequelize.literal(
-          "CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3)"
-        )
-      }
     },
     {
       timestamps: true,
@@ -81,5 +77,7 @@ module.exports = function(sequelize, DataTypes) {
       underscored: true
     }
   );
+
   return Jobs;
+  
 };

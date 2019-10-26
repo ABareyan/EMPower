@@ -1,25 +1,36 @@
 var db = require("../models");
 
 module.exports = function (app) {
-  // Get all examples
-  app.get("/api/examples", function (req, res) {
-    db.Employee.findAll({}).then(function (dbExamples) {
-      res.json(dbExamples);
+  
+  app.get("/api/jobs/all", function (req, res) {
+    db.Jobs.findAll({}).then(function (dbJobs) {
+      res.json(dbJobs);
     });
   });
 
-
-  // Create a new example
-  app.post("/api/examples", function (req, res) {
-    db.Example.create(req.body).then(function (dbExample) {
-      res.json(dbExample);
+  app.get("/api/employee/all", function (req, res) {
+    db.Employee.findAll({}).then(function (dbEmployees) {
+      res.json(dbEmployees);
     });
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function (req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function (dbExample) {
-      res.json(dbExample);
+  app.post("/api/jobs/new", function (req, res) {
+    
+    console.log("New Jobs");
+    console.log(req.body);
+
+    db.Jobs.create(req.body).then(function(dbJob){
+      res.json(dbJob);
+    });
+  });
+
+  app.post("/api/employee/new", function (req, res) {
+    
+    console.log("New Employee");
+    console.log(req.body);
+
+    db.Employee.create(req.body).then(function(dbEmployee){
+      res.json(dbEmployee);
     });
   });
 };

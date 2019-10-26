@@ -12,15 +12,12 @@
 
   <script src="../js/jsulkit/uikit.min.js"></script>
   <script src="../js/jsulkit/uikit-icons.min.js"></script>
-
+  
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-
-  
-
 </head>
 
 <body>
@@ -42,51 +39,77 @@
     <form>
 
       <div class="group">
-        <input type="text" class="empInput" id="name" required value="test">
+        <input type="text" class="empInput" id="name" required value="Test">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Name</label>
+        <label>Company Name</label>
       </div>
 
       <div class="group">
-        <input type="email" class="empInput" id="email" required value="test@test.tes">
+        <input type="text" class="empInput" id="url" required value="https://test.com">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>URL</label>
+      </div>
+
+      <div class="group">
+        <input type="email" class="empInput" id="email" required value="test@test.com">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Email</label>
       </div>
+
       <div class="group">
         <input type="number" class="empInput" id="phoneNumber" required value="09876543">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Phone Number</label>
       </div>
+
       <div class="group">
-        <input type="text" class="empInput" id="jobType" required value="test">
+        <input type="text" class="empInput" id="jobLocation" required value="Test">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Job Location</label>
+      </div>
+
+      <div class="group">
+        <input type="text" class="empInput" id="jobType" required value="Test">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Job Type</label>
       </div>
+
       <div class="group">
         <input type="text" class="empInput" id="jobCategory" required value="Test">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Job Category</label>
       </div>
+
       <div class="group">
-        <input type="text" class="empInput" id="location" required value="test">
+        <input type="text" class="empInput" id="position" required value="Test">
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Location</label>
+        <label>Position</label>
       </div>
+
       <div class="group">
-        <input type="number" class="empInput" id="wage" required value="234">
+        <input type="text" class="empInput" id="description" required value="Test">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Description</label>
+      </div>
+
+      <div class="group">
+        <input type="number" class="empInput" id="wage" required value="0987665">
         <span class="highlight"></span>
         <span class="bar"></span>
         <label>Hourly Wage</label>
       </div>
 
       <div class="button_cont" text-align="center">
-        <a class="example_e" id="employee" href="/add/employee" rel="nofollow noopener">S u b m i t</a>
+        <a class="example_e" id="employee" href="/add/jobs" rel="nofollow noopener">S u b m i t</a>
       </div>
 
     </form>
@@ -119,19 +142,19 @@
       </div>
       <div class="uk-modal-body">
           <p>All your information added in EMPower database</p>
-          <p>Push the button Available Jobs to see jobs</p>
+          <p>Push the button Available Employee to see employes</p>
       </div>
       <div class="uk-modal-footer uk-text-right">
           <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-          <a class="uk-link-muted" href="/add/jobs">
-              <button class="uk-button uk-button-primary" type="button">Available Jobs</button>
+          <a class="uk-link-muted" href="/add/employee">
+              <button class="uk-button uk-button-primary" type="button">Available Employee</button>
           </a>
       </div>
   </div>
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="../js/new_employee.js"></script>
+<script src="../js/new_job.js" type="text/javascript"></script>
 
 
 </body>

@@ -21,28 +21,39 @@
 
     <hr class="uk-divider-icon">
 
-    <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+    <div class="uk-child-width-1-3@m uk-grid-match" uk-grid>
       <div>
-        <a href="/employee_input">
+        <a href="/employee">
           <div class="uk-card uk-card-default uk-card-body" id="shadow"
             uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-            <h3 class="uk-card-title">Looking For Job</h3>
-            <p>Click here if you are looking for job</p>
+            <h3 class="uk-card-title">Sign-up</h3>
+            <p>Click here for registration</p>
           </div>
         </a>
 
       </div>
       <div>
-        <a href="/employer_input">
+        <a  onclick="UIkit.notification({message: '<span uk-icon=\'icon: code\'></span> We apologize, this section is under construction.'})">
+          <div class="uk-card uk-card-default uk-card-body" id="shadow"
+            uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+            <h3 class="uk-card-title">Already registrated</h3>
+            <p>Click here for Sign-in</p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="/add/jobs">
           <div class="uk-card uk-card-default uk-card-body" id="shadow"
             uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-            <h3 class="uk-card-title">Post Job</h3>
-            <p>Click here if you are loking for workers</p>
+            <h3 class="uk-card-title">Guest Sign-in</h3>
+            <p>Click here for see all avaliable jobs</p>
           </div>
         </a>
       </div>
     </div>
   </div>
+
+
 </body>
 
 </html>

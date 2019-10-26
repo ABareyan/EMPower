@@ -1,7 +1,7 @@
 INSERT INTO jobs
     (company_name, url, email, location, job_type, job_category, position, description, compensation)
 VALUES
-    ("Apple Inc", "https://www.apple.com", "apple.hr@apple.com", "California", "Contract", "Software Development",
+    ("Apple Inc", "https://www.apple.com/jobs/us/", "apple.hr@apple.com", "California", "Contract", "Software Development",
         "Software Developer", "Software engineers design, develop, and test software and applications for computers.", 45.00);
 
 INSERT INTO jobs
