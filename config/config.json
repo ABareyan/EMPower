@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "1a2b3c4d",
+    "password": "mySQL2019",
     "database": "empower_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "1a2b3s4d",
+    "password": "mySQL2019",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
