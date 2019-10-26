@@ -1,11 +1,3 @@
-// module.exports = function(sequelize, DataTypes) {
-//     var Example = sequelize.define("Example", {
-//         text: DataTypes.STRING,
-//         description: DataTypes.TEXT
-//     });
-//     return Example;
-// };
-
 module.exports = function (sequelize, DataTypes) {
   var Employee = sequelize.define("Employee", {
     name: {
@@ -22,9 +14,9 @@ module.exports = function (sequelize, DataTypes) {
     },
     // eslint-disable-next-line camelcase
     phone_number: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       validate: {
-        len: [1, 50]
+        len: [1, 11]
       }
     },
     // eslint-disable-next-line camelcase
@@ -35,10 +27,11 @@ module.exports = function (sequelize, DataTypes) {
       }
     },
     job_category: {
-      type: DataTypes.STRING,
-      validate: {
-        len: [1, 160]
-      }
+      type: DataTypes.TEXT,
+        allowNull: false,
+        validate: {
+          len: [1, 160]
+        }
     },
     location: {
       type: DataTypes.TEXT,
@@ -46,12 +39,21 @@ module.exports = function (sequelize, DataTypes) {
         len: [1, 160]
       }
     },
-    compensation: {
+    hourly_wage: {
       type: DataTypes.INTEGER,
       validate: {
         len: [1, 160]
       }
     }
-  });
+  },
+  {
+    timestamps: true,
+    tableName: "employee",
+    paranoid: true,
+    underscored: true
+  }
+  );
+
+
   return Employee;
 };
