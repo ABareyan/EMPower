@@ -23,9 +23,17 @@ Job seekers look into our database to see available positions and compensation.
 If the type of job and compensation they are looking for matches with employers need, we will display the available jobs
 If they can’t find the type of jobs, they can post themselves what type of jobs they are looking for and anticipated compensation
 
+https://share.getcloudapp.com/mXu7KNKj
+
+https://share.getcloudapp.com/yAu4ygyq
+
 # Employers
 Employers can directly post what type of employees they are hiring
 If there’s already profile set by the job seekers, employer can contact them
+
+https://share.getcloudapp.com/9ZuWQ6Q8
+
+https://share.getcloudapp.com/wbuebObL
 
 ## Future Plans
 Allow employers to be able to mark already hired post as ‘Hired’ and post automatically deleted
