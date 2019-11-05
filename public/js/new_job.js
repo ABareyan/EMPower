@@ -51,20 +51,20 @@ $("#employee").on("click", function (event) {
       // Log the data we found
       console.log("Name " + data.company_name);
       UIkit.modal("#modal-sections").show();
+
+      $('#name').val("");
+      $('#url').val("");
+      $('#email').val("");
+      $('#phoneNumber').val("");
+      $('#jobLocation').val("");
+      $('#jobType').val("");
+      $('#jobCategory').val("");
+      $('#position').val("");
+      $('#description').val("");
+      $('#wage').val("");
       
     });
   } else UIkit.modal("#modal-overflow").show();
-
-
-
-  console.log(validateForm());
-  
-  console.log(name);
-  console.log(url);
-  console.log(email);
-  console.log(phoneNumber);
-  console.log(jobLocation);
-
   
 
 })

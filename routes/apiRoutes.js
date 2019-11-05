@@ -33,4 +33,62 @@ module.exports = function (app) {
       res.json(dbEmployee);
     });
   });
+
+  app.get("/api/employee/:email", function (req, res) {
+    db.Employee.findAll({
+      where: {
+        email: req.params.email
+      }
+    }).then(function (dbEmployee) {
+      res.json(dbEmployee);
+    });
+  });
+
+  app.get("/api/employer/:email", function (req, res) {
+    db.Jobs.findAll({
+      where: {
+        email: req.params.email
+      }
+    }).then(function (dbJob) {
+      res.json(dbJob);
+    });
+  });
+
+  
+
+  app.delete("/api/remove/:id", function(req, res){
+    db.Employee.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbEmployee){
+      res.json(dbEmployee);
+    })
+  })
+
+  app.delete("/api/remove/employer/:id", function(req, res){
+    db.Jobs.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbJob){
+      res.json(dbJob);
+    })
+  })
+
+  
+
+  app.get("/api/employee/:id", function (req, res) {
+    
+    db.Employee.findAll({
+      where: {
+        id: req.params.id
+      }
+    }).then(function (dbEmployee) {
+      res.json(dbEmployee);
+    });
+  });
+
+
+  
 };

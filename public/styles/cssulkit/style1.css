@@ -282,3 +282,15 @@ input:focus~.highlight {
   color: #ffffff;
 }
 
+.delete {
+  color: #4a2343;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.3em;
+}
+
+.delete:hover {
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.4em;
+}
+

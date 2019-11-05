@@ -1,6 +1,5 @@
 var path = require("path");
 
-var db = require("../models");
 
 module.exports = function (app) {
 
@@ -27,13 +26,33 @@ module.exports = function (app) {
   app.get("/contributors", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/contributors.html"));
   });
-  
+
   app.get("/add/employee", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/employee-result.html"));
   });
 
   app.get("/add/jobs", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/html/employeer-result.html"));
+  });
+
+  app.get("/employee/email", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/employee_data.html"));
+  });
+
+  app.get("/employer/email", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/employer_data.html"));
+  });
+
+  app.get("/employee/info", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/employee_info.html"));
+  });
+
+  app.get("/employer/:id", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/employer_one.html"));
+  });
+
+  app.get("/remove/:id", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/html/remove.html"));
   });
 
 

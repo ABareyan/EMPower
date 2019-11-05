@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Employee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../styles/cssulkit/uikit.min.css" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/cssulkit/style1.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script src="../js/jsulkit/uikit.min.js"></script>
+  <script src="../js/jsulkit/uikit-icons.min.js"></script>
+  
+</head>
+
+<body>
+
+  <div class="uk-container">
+    <div class="left">
+      <img class="logoSmall" alt="" uk-img="data-src:../assets/EmpowerSmall.png" uk-svg>
+    </div>
+
+    <div class="right">
+
+      <a href="/" class="myButton">H o m e</a>
+      <h1 class="uk-heading-line uk-text-left uk-heading-medium" id="head">EMPower</h1>
+      <h1 class="uk-heading-line uk-text-left uk-margin-medium-rightt" id="head"><span>Our Job Is To EMPower You</span></h1>
+    </div>
+    <br>
+    <hr class="uk-divider-icon">
+
+    <form class="uk-margin-large-bottom">
+
+      
+      <h2 class="uk-margin-large-top">Enter your E-mail to view or delete your account</h2>
+
+      <div class="group">
+        <input type="email" class="empInput" id="email" required>
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Email</label>
+      </div>
+      
+      <div class="button_cont" text-align="center">
+        <a class="example_e" id="employeeMail" href="/employee/info" rel="nofollow noopener">S e a r c h</a>
+      </div>
+      
+
+    </form>
+
+    <div class="uk-text-center uk-grid-small" uk-grid>
+        <div class="uk-width-5-6">
+  
+          <div class="uk-overflow-auto">
+
+            <table class="uk-table uk-table-justify uk-table-divider">
+              <thead>
+                  <tr class="brown">
+                      <th class="uk-width-small">Name</th>
+                      <th class="uk-width-small">E-mail</th>
+                      <th class="uk-width-small">Job Type</th>
+                      <th class="uk-width-small">Location</th>
+                      <th class="uk-width-small">Hourly Wage</th>
+                      <th class="uk-width-small">Delete</th>
+                  </tr>
+              </thead>
+              <tbody id="result-employee">
+                  
+              </tbody>
+          </table>
+          </div>
+  
+        </div>
+        <div class="uk-width-1-6">
+          <div class="uk-height-large uk-card uk-card-default uk-card-body uk-flex uk-flex-center uk-flex-middle">
+              <div class="uk-position-top-center uk-overlay uk-overlay-default uk-height-small ad-top">Your Ad Here</div>    
+          </div>
+        </div>
+    </div>
+    
+
+  </div>
+
+  
+ 
+
+<div id="modal-overflow" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Dear Partner</h2>
+        </div>
+        <div class="uk-modal-body" uk-overflow-auto>
+            <p>Please enter your E-mail before searching!</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+      </div>
+    </div>
+</div>
+
+<div id="modal-overflow2" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Dear Partner</h2>
+        </div>
+        <div class="uk-modal-body" uk-overflow-auto>
+            <p>We cannot find your account in EMPower database!</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+          <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+      </div>
+    </div>
+</div>
+
+<div id="modal-sections2" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Dear Partner</h2>
+        </div>
+        <div class="uk-modal-body">
+            <p>Your account has totally deleted from EMPower database!</p>
+        </div>
+        <a class="uk-link-muted" href="/">
+          <button class="uk-button uk-button-primary" type="button">Home</button>
+      </a>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/employee-data.js" type="text/javascript"></script>
+
+</body>
+
+</html>
