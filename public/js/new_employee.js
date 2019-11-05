@@ -40,14 +40,22 @@ $("#employee").on("click", function (event) {
     .then(function(data) {
       // Log the data we found
       console.log("Name " + data.name);
+      
+      $('#name').val("");
+      $('#email').val("");
+      $('#phoneNumber').val("");
+      $('#jobType').val("");
+      $('#jobCategory').val("");
+      $('#location').val("");
+      $('#wage').val("");
+      
       UIkit.modal("#modal-sections").show();
       
     });
   } else UIkit.modal("#modal-overflow").show();
 
 
-
-  console.log(validateForm());
+  
 
   
 
