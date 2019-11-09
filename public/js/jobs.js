@@ -1,7 +1,7 @@
-$.get("/api/jobs/all", function(data){
+$.get("/api/jobs/all", function (data) {
   for (var i = data.length - 1; i >= 0; i--) {
     var tableBody = $("<tr>")
-    tableBody.addClass("uk-text-truncate");
+    // tableBody.addClass("uk-table-link");
     tableBody.append("<td>" + data[i].company_name + "</td>");
     tableBody.append("<td>" + data[i].url + "</td>");
     tableBody.append("<td>" + data[i].email + "</td>");
@@ -14,5 +14,7 @@ $.get("/api/jobs/all", function(data){
     tableBody.append("<td>" + data[i].hourly_wage + "</td>");
 
     $("#result-job").append(tableBody);
+
   }
+
 });
